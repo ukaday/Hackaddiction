@@ -5,14 +5,8 @@ import java.util.Random;
 
 public class Panel extends JPanel implements KeyListener{
 
-    enum State {
-        LEVEL_ONE,
-        LEVEL_INFINITE,
-    }
-
-    final int SCREEN_WIDTH = 800;
-    final int SCREEN_HEIGHT = 800;
-    State gameState;
+    final int SCREEN_WIDTH = 675;
+    final int SCREEN_HEIGHT = 675;
 
     //timer stuff, fps is how many times it runs per second
     final int fps = 20;
@@ -32,15 +26,10 @@ public class Panel extends JPanel implements KeyListener{
         this.setBackground(Color.black);
         this.setFocusable(true);
         this.addKeyListener(this);
-
+        
         container = new MazeContainer();
     }
-
-    public void start() {
-        gameState = State.LEVEL_ONE;
-        container = new MazeContainer();
-    }
-
+    
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         draw(g);

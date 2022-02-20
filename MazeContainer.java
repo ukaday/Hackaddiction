@@ -18,7 +18,7 @@ public class MazeContainer {
     int[] vel;
     
     public MazeContainer() {
-        //creates the list of 9 maze slies
+        //creates the list of 9 maze slides
     	
         container = new MazeSlide[9];
         OrientationMaker OM = new OrientationMaker();
@@ -87,7 +87,11 @@ public class MazeContainer {
 
     //picks a random slide
     public void cycleSlide() {
-        currentSlide = container[random.nextInt(8)];
+    	MazeSlide nextSlide = currentSlide;
+    	while (nextSlide.equals(currentSlide)) {
+    		nextSlide = container[random.nextInt(8)];
+    	}
+        currentSlide = nextSlide;
     }
 
     public void setVelX(int x) {
