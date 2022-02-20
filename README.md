@@ -33,3 +33,5 @@ boundary of the maze, the maze will shift to another section of the maze.
 
 *** HINT ***
 If you’re having trouble finding the exit, just remember “X marks the spot”.
+
+Acknowledgements: Thanks to Chris Hudson and Loc Trinh for teaching us Java as well as Alex Lee for teaching us Java Graphics.
