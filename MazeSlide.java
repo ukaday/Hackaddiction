@@ -55,7 +55,7 @@ public class MazeSlide{
                     g.fillRect(x, y, 25, 25);
                 }
                 else if (maze[i][j] == 2) {
-                    g.setColor(Color.CYAN);
+                    g.setColor(Color.RED);
                     g.fillRect(x, y, 25, 25);
                 }
                 x += 25;
