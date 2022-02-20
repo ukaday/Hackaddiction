@@ -6,7 +6,7 @@ exceedingly large and seemingly infinite.
 
 DIRECTIONS:
 Use the keys W,A,S,D to move throughout the maze. The maze is infinite, there is no exit on any side as it is hidden deep within the maze. As you cross the
-boundary of the maze, the maze will shift to another section of the maze. 
+boundary of the maze, the maze will shift to another section of the maze. The red square is YOU. The black squares are the ones you can navigate on while the white squares are the barriers in which you cannot go through.
 
 
 
